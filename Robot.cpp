@@ -1,9 +1,10 @@
+// include libraries
 #include "Robot.h"
 #include "WPILib.h"
 #include "Config.h"
 #include "Drive.h"
 
-
+// define Robot function
 Robot::Robot(void){
 	o_Joystick = new Joystick(JOYSTICK_PORT);
 	o_Drive = new Drive();
@@ -12,7 +13,7 @@ Robot::Robot(void){
 	imaqError = IMAQdxOpenCamera(CAMERA_NAME, IMAQdxCameraControlModeController, &session);
 }
 
-
+// delete objects from Robot function
 Robot::~Robot(void){
 	delete o_Joystick;
 	delete o_Drive;
