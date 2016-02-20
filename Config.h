@@ -1,5 +1,6 @@
-#ifndef CONFIG_H__INCLUDED
-#define CONFIG_H__INCLUDED
+// config.h to declare all constants
+#ifndef CONFIG_H__INCLUDED // checks to see if CONFIG_H__INCLUDED has been defined
+#define CONFIG_H__INCLUDED // defines CONFIG_H__INCLUDED if it hasn't already been defined
 
 
 const float CYCLE_TIME_DELAY = 0.020;
